@@ -19,6 +19,7 @@ alias ld='eza -lhD --icons=auto' # long list directories
 alias cat='bat'
 alias pcat='bat -p'
 alias btop='btop -u 250'
+alias i='sudo pacman -Sy' # install any package from pacman
 alias yeet='sudo pacman -Rncs' # uninstall package
 alias update='sudo pacman -Syu' # update system/package
 alias aurupdate='paru -Syu' # update aur

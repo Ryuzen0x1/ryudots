@@ -1,20 +1,20 @@
 * {
-    font-size: 20px;
     border: none;
     font-family: EnvyCodeR Nerd Font Mono;
-    font-weight: Bold;
+    font-weight: bold;
+    font-size: 13px;
     min-height: 0;
+    padding: 1px;
     border-radius: 0px;
-    padding: 7px;
 }
 
 window#waybar {
-    color: @theme_fg_color;
     background: @theme_bg_color;
+    color: @theme_fg_color;
 }
 
 tooltip {
-    background: @theme_bg_color;
+    background: #121212;
 }
 
 #workspaces button {
@@ -54,7 +54,9 @@ tooltip {
 #tray,
 #cpu,
 #backlight {
-    background: @theme_bg_color;
+    background: @theme_base_color;
+    padding: 0px 10px;
+    margin: 0px;
 }
 
 #tray {
@@ -90,9 +92,13 @@ tooltip {
 }
 
 #battery.warning:not(.charging) {
-    color: #C4E969;
+	color: #C4E969;
 }
 
 #battery.critical:not(.charging) {
-    color: #B7416E;
+	color: #B7416E;
+}
+
+#custom-weather {
+    color: @theme_text_color;
 }

@@ -18,7 +18,8 @@
     ],
 
     "modules-right": [
-    	"cpu",
+    	"battery",
+      "cpu",
 	"memory",
         "pulseaudio",
 	"custom/updates",
@@ -134,7 +135,7 @@
 		"warning": 20,
 		"critical": 15
 	},
-	"format": "BAT: [ {icon} ] <span size='8pt'>{capacity}%</span>",
+	"format": "BAT: [ {icon} ] <span size='8pt'>{capacity}% </span>",
 	"interval": 5,
 	"format-charging": "BAT: [ {icon} ] <span size='8pt'>CHRG</span>",
 	"format-plugged": "BAT: [ {icon} ] <span size='8pt'>PLUG</span>",

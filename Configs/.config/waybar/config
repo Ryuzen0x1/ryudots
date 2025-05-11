@@ -44,7 +44,7 @@
 
     "memory": {
     	"interval": 20,
-	"format": "MEM: [ {icon} ] <span size='8pt'>{percentage}%</span>",
+	"format": "MEM: [ {icon} ] <span size='8pt'>{percentage}% </span>",
 	"tooltip-format": "MEM_TOT\t: {total}GiB\nSWP_TOT\t: {swapTotal}GiB\n\nMEM_USD\t: {used:0.1f}GiB\nSWP_USD\t: {swapUsed:0.1f}GiB",
 	"format-icons": ["░░░░░░░░", "█░░░░░░░", "██░░░░░░", "███░░░░░", "████░░░░", "█████░░░", "██████░░", "<span color='#B7416E'>!!!!!!!!</span>", "<span color='#B7416E'>CRITICAL</span>"]
     },
@@ -78,7 +78,7 @@
 
     "cpu": {
     	"interval": 1,
-	"format": "CPU: [ {icon} ] <span size='8pt'>{usage}%</span>",
+	"format": "CPU: [ {icon} ] <span size='8pt'>{usage}% </span>",
 	"tooltip": true,
 	"format-icons": ["░░░░░░░░", "█░░░░░░░", "██░░░░░░", "███░░░░░", "████░░░░", "█████░░░", "██████░░", "<span color='#B7416E'>!!!!!!!!</span>", "<span color='#B7416E'>CRITICAL</span>"]
     },
@@ -108,7 +108,7 @@
     },
 
     "pulseaudio": {
-        "format": "VOL: [ {icon} ] <span size='8pt'>{volume}%</span>",
+        "format": "VOL: [ {icon} ] <span size='8pt'>{volume}% </span>",
         "tooltip": true,
 	"tooltip-format": "DEVICE: {desc}",
         "format-muted": "VOL: <span color='#B7416E'>[ XXXXXXXX ] <span size='8pt'>{volume}%</span></span>",

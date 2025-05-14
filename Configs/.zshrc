@@ -62,4 +62,4 @@ eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Pokemon Script
-pokego -r 1 2 3 --no-title
+pokego --no-title -r 1 2 3

@@ -123,7 +123,7 @@
 
     "network": {
 	"format-wifi": "[ <span color='#86e371'>ONLINE</span> ]",
-	"format-ethernet": "[ <span> color='#867e371'ONLINE</span> ]",
+	"format-ethernet": "[ <span color='#867e37'>ONLINE</span> ]",
 	"tooltip-format-wifi": "ESSID\t: {essid}\nSTRNGTH\t: {signaldBm}\n\nADDRESS\t: {ipaddr}\nGATE\t: {gwaddr}\nMASK\t: {netmask} | {cidr}",
 	"tooltip-format-ethernet": "IFNAME: {ifname}\nADDRESS: {ipaddr}",
 	"format-disconnected": "[ <span color='#B7416E'>XXXXXX</span> ]",
@@ -137,8 +137,8 @@
 	},
 	"format": "BAT: [ {icon} ] <span size='8pt'>{capacity}% </span>",
 	"interval": 5,
-	"format-charging": "BAT: [ {icon} ] <span size='8pt'>CHRG</span>",
-	"format-plugged": "BAT: [ {icon} ] <span size='8pt'>PLUG</span>",
+	"format-charging": "BAT: [ {icon} ] <span size='8pt'>CHRG </span>",
+	"format-plugged": "BAT: [ {icon} ] <span size='8pt'>PLUG </span>",
 	"tooltip-format": "BATTERY: {power}W\nSTATUS: {timeTo}\nCYCLES: {cycles}\nHEALTH: {health}",
 	"format-icons": ["<span color='#B7416E'>CRITICAL", "<span color='#B7416E'>!!!!!!!!</span>", "██░░░░░░", "███░░░░░", "████░░░░", "█████░░░", "██████░░", "███████░", "████████"]
     },

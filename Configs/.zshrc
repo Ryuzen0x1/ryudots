@@ -60,7 +60,12 @@ bindkey "^[[3;5~" kill-word # ctrl+del
 bindkey "^[[3~" delete-char # del
 
 # Source antidote
-source $HOME/.config/.antidote/antidote.zsh
+export ANTIDOTE="$HOME/.config/.antidote"
+if [ ! -d "$ANTIDOTE" ]; then
+    echo "Installing antidote plugin manager..."
+    git clone --depth=1 https://github.com/mattmc3/antidote.git "$ANTIDOTE"
+fi
+source "$ANTIDOTE/antidote.zsh"  # Sourcing antidote plugins
 antidote load $HOME/.config/.zsh_plugins.txt
 
 # Starship eval

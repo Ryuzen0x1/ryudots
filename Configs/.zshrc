@@ -12,7 +12,9 @@ plugins=(git sudo)
 
 # ZSH configurations
 autoload -Uz select-word-style
-select-word-style bash
+select-word-style bash  # <c-W> to only delete the last folder
+
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'  # Tab completion to be case-INsensitive
 
 # Aliases
 # alias vim='nvim' # neovim

@@ -10,6 +10,10 @@ export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git sudo)
 
+# ZSH configurations
+autoload -Uz select-word-style
+select-word-style bash
+
 # Aliases
 # alias vim='nvim' # neovim
 alias ls='eza -l --icons=auto' # long list

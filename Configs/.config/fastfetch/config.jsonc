@@ -18,7 +18,7 @@ fastfetch --config hyde/*.jsonc
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[36m  󰄛  コンピューター"
+      "format": "\u001b[36m  龍武士 󰄛  コンピューター"
     },
     {
       "type": "custom",

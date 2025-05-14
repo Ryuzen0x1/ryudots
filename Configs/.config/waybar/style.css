@@ -10,11 +10,11 @@
 
 window#waybar {
     color: @theme_fg_color;
-    background: #000132;
+    background: #121212;
 }
 
 tooltip {
-    background: #000132;
+    background: #121212;
 }
 
 #workspaces button {
@@ -23,22 +23,22 @@ tooltip {
 
 #workspaces button.active {
     color: @theme_selected_bg_color;
-    background: #000132;
+    background: #121212;
 }
 
 #workspaces button.focused {
     color: @theme_fg_color;
-    background: #000132;
+    background: #121212;
 }
 
 #workspaces button.urgent {
     color: @theme_fg_color;
-    background: #000132;
+    background: #121212;
 }
 
 #workspaces button:hover {
     background: @theme_fg_color;
-    color: #000132;
+    color: #121212;
 }
 
 #custom-language,
@@ -54,7 +54,7 @@ tooltip {
 #tray,
 #cpu,
 #backlight {
-    background: #000132;
+    background: #121212;
 }
 
 #tray {

@@ -1,0 +1,18 @@
+{
+    // Font related
+    "editor.fontFamily": "Maple Mono NF",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.fontWeight": "425",
+
+    // Visual changes
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize":0,
+    "workbench.colorTheme": "Catppuccin Mocha",
+
+    "terminal.external.linuxExec": "kitty",
+
+    // Telemetry
+    "telemetry.telemetryLevel": "off",
+    "telemetry.feedback.enabled": false
+}

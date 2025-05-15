@@ -132,8 +132,8 @@
 
     "battery": {
     	"states": {
-			"warning": 20,
-			"critical": 15
+			"warning": 15,
+			"critical": 10
 		},
 		"format": "BAT: [ {icon} ] <span size='8pt'>{capacity}% </span>",
 		"interval": 5,

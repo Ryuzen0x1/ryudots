@@ -34,7 +34,8 @@ alias s='sudo pacman -Ss' # list availabe pacman package
 alias ps='paru -Ss' # list availabe aur package
 alias pc='sudo pacman -Sc' # remove unused cache
 alias ro='paru -Qtdq | paru -Rncs -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
-alias code='code --ozone-platform=wayland' # gui code editor
+# alias code='code --ozone-platform=wayland' # gui code editor
+alias code='codium --ozone-platform=wayland' # gui codium editor
 alias fsf='fastfetch'
 
 # Useful Aliases

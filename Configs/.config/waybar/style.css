@@ -10,11 +10,11 @@
 
 window#waybar {
     color: @theme_fg_color;
-    background: rgba(18, 18, 18, 0.0);
+    background: rgba(18, 18, 18, 0);
 }
 
 tooltip {
-    background: rgba(18, 18, 18, 0.0);
+    background: rgba(18, 18, 18, 0);
 }
 
 #workspaces button {
@@ -23,22 +23,22 @@ tooltip {
 
 #workspaces button.active {
     color: @theme_selected_bg_color;
-    background: rgba(18, 18, 18, 0.0);
+    background: rgba(18, 18, 18, 0);
 }
 
 #workspaces button.focused {
     color: @theme_fg_color;
-    background: rgba(18, 18, 18, 0.0);
+    background: rgba(18, 18, 18, 0);
 }
 
 #workspaces button.urgent {
     color: @theme_fg_color;
-    background: rgba(18, 18, 18, 0.0);
+    background: rgba(18, 18, 18, 0);
 }
 
 #workspaces button:hover {
     background: @theme_fg_color;
-    color: rgba(18, 18, 18, 0.0);
+    color: rgba(18, 18, 18, 0);
 }
 
 #custom-language,
@@ -54,7 +54,7 @@ tooltip {
 #tray,
 #cpu,
 #backlight {
-    background: rgba(18, 18, 18, 0.0);
+    background: rgba(18, 18, 18, 0);
 }
 
 #tray {

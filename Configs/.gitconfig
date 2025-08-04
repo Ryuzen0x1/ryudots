@@ -10,3 +10,7 @@
 	gpgsign = true
 [gpg "ssh"]
 	allowedSignersFile = /home/ryuki/.config/git/allowed_signers
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true

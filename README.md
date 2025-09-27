@@ -30,16 +30,16 @@ timeout: 5
 /Arch Linux (linux-cachyos)
     protocol: linux
     path boot():/vmlinuz-linux-cachyos
-    cmdline: cryptdevice=PARTUUID=83af52d9-dd66-4821-9797-fb17f78d7b94:main root=/dev/sapper/main zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs
+    cmdline: cryptdevice=PARTUUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX:main root=/dev/sapper/main zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs
     module_path: boot():/initramfs-linux-cachyos.img
 
 /Arch Linux (linux-cachyos-fallback)
     protocol: linux
     path: boot():/vmlinuz-linux-cachyos
-    cmdline: cryptdevice=PARTUUID=83af52d9-dd66-4821-9797-fb17478d7b94:main root=/dev/mapper/main zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs
+    cmdline: cryptdevice=PARTUUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX:main root=/dev/mapper/main zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs
     module_path: boot():/initramfs-linux-cachyos-fallback.img
 ```
-You can add and other customizations at a later date.
+You can add and other customizations at a later date. `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX` means PARTUUID of the encrypted partition when using `blkid`. 
 
 ### To install zram
 

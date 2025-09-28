@@ -40,6 +40,39 @@ timeout: 5
     module_path: boot():/initramfs-linux-cachyos-fallback.img
 ```
 You can add and other customizations at a later date. `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX` means PARTUUID of the encrypted partition when using `blkid`. 
+Now customizing the limine bootloader.
+```zsh
+timeout: 5
+default_entry: 2
+remember_last_entry: yes
+
+# CachyOS Limine theme
+# Author: diegons490 (https://github.com/diegons490/cachyos-limine-theme)
+term_palette: 1e1e2e;f38ba8;a6e3a1;f9e2af;89b4fa;f5c2e7;94e2d5;cdd6f4
+term_palette_bright: 585b70;f38ba8;a6e3a1;f9e2af;89b4fa;f5c2e7;94e2d5;cdd6f4
+term_background: ffffffff
+term_foreground: cdd6f4
+term_background_bright: ffffffff
+term_foreground_bright: cdd6f4
+interface_branding:
+wallpaper: boot():/limine-splash.png
+
+/+CachyOS
+  //linux-cachyos
+  comment: 6.16.8-2-cachyos
+  protocol: linux
+  module_path: boot():/92db65653f7b4ab5a73ca4e0a6e85879/linux-cachyos/initramfs-linux-cachyos#<sha256-hash>
+  kernel_path: boot():/92db65653f7b4ab5a73ca4e0a6e85879/linux-cachyos/vmlinuz-linux-cachyos#<sha256-hash>
+  kernel_cmdline: quiet nowatchdog splash rw rootflags=subvol=/@ cryptdevice=UUID=<uuid-of-partition>:main root=/dev/mapper/main
+
+  //linux-cachyos-lts
+  comment: 6.12.48-2-cachyos-lts
+  protocol: linux
+  module_path: boot():/92db65653f7b4ab5a73ca4e0a6e85879/linux-cachyos-lts/initramfs-linux-cachyos-lts#<sha256-hash>
+  kernel_path: boot():/92db65653f7b4ab5a73ca4e0a6e85879/linux-cachyos-lts/vmlinuz-linux-cachyos-lts#<sha256-hash>
+  kernel_cmdline: quiet nowatchdog splash rw rootflags=subvol=/@ cryptdevice=UUID=<uuid-of-partition>:main root=/dev/mapper/main
+```
+This is the cachyos default limine setup.
 
 ### To install zram
 

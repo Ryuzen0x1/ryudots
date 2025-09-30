@@ -2,6 +2,10 @@
 
 dotfiles for Hyprland setup.
 
+### Installing Limine (new bootloader)
+
+The instructions can be found [here](./Assets/limine.md).
+
 ### To install zram
 
 Run the script in the `Scripts` folder called [install-zram.sh](./Scripts/install-zram.sh).

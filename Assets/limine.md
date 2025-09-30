@@ -57,15 +57,15 @@ wallpaper: boot():/limine-splash.png
   //linux-cachyos
   comment: 6.16.8-2-cachyos
   protocol: linux
-  module_path: boot():/92db65653f7b4ab5a73ca4e0a6e85879/linux-cachyos/initramfs-linux-cachyos#<sha256-hash>
-  kernel_path: boot():/92db65653f7b4ab5a73ca4e0a6e85879/linux-cachyos/vmlinuz-linux-cachyos#<sha256-hash>
+  module_path: boot():/<combined-folder-sha>/linux-cachyos/initramfs-linux-cachyos#<sha256-hash>
+  kernel_path: boot():/<combined-folder-sha>/linux-cachyos/vmlinuz-linux-cachyos#<sha256-hash>
   kernel_cmdline: quiet nowatchdog splash rw rootflags=subvol=/@ cryptdevice=UUID=<uuid-of-partition>:main root=/dev/mapper/main
 
   //linux-cachyos-lts
   comment: 6.12.48-2-cachyos-lts
   protocol: linux
-  module_path: boot():/92db65653f7b4ab5a73ca4e0a6e85879/linux-cachyos-lts/initramfs-linux-cachyos-lts#<sha256-hash>
-  kernel_path: boot():/92db65653f7b4ab5a73ca4e0a6e85879/linux-cachyos-lts/vmlinuz-linux-cachyos-lts#<sha256-hash>
+  module_path: boot():/<combined-folder-sha>/linux-cachyos-lts/initramfs-linux-cachyos-lts#<sha256-hash>
+  kernel_path: boot():/<combined-folder-sha>/linux-cachyos-lts/vmlinuz-linux-cachyos-lts#<sha256-hash>
   kernel_cmdline: quiet nowatchdog splash rw rootflags=subvol=/@ cryptdevice=UUID=<uuid-of-partition>:main root=/dev/mapper/main
 ```
 This is the cachyos default limine setup.

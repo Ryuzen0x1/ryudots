@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+image=$1
+
+swww img "$image" --transition-step 255 --transition-fps 60 --transition-type any

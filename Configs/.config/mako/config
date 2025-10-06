@@ -10,4 +10,4 @@ padding=0,15,25
 border-size=2
 border-color=#a7c080
 default-timeout=5000
-ignored timeout=1
+ignore-timeout=1

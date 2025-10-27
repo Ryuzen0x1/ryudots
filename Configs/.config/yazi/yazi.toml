@@ -1,0 +1,13 @@
+[mgr]
+ratio = [1, 3, 4]
+sort_by = "mtime"
+sort_dir_first = true
+linemode = "size"
+
+[opener]
+play = [
+    { run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+edit = [
+    { run = '$(which nvim) "$@"', block = true, for = "unix" },
+]

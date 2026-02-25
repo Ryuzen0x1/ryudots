@@ -2,4 +2,4 @@
 
 image=$1
 
-swww img "$image" --transition-step 255 --transition-fps 60 --transition-type any
+uwsm app -- swww img "$image" --transition-step 255 --transition-fps 60 --transition-type any --transition-pos 0.101,0.101

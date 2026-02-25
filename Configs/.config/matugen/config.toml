@@ -1,0 +1,14 @@
+[config.wallpaper]
+command = "swww img --transition-step 144 --transition-type any --transition-pos 0.854,0.977 --transition-fps 60 {{ image }}"
+set = true
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/hyprcolors.conf'
+
+# ---
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = "kill -SIGUSR1 $(pgrep kitty)"

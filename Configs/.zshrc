@@ -16,15 +16,23 @@ select-word-style bash  # <c-W> to only delete the last folder
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'  # Tab completion to be case-INsensitive
 
+# History File
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+
+
 # Aliases
 # alias vim='nvim' # neovim
 alias ls='eza -l --icons=auto' # long list
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias tree='eza --tree --icons=auto' # tree view
 alias ld='eza -lhD --icons=auto' # long list directories
+
 alias cat='bat'
 alias pcat='bat -p'
 alias btop='btop -u 250'
+
 alias i='sudo pacman -Sy' # install any package from pacman
 alias yeet='sudo pacman -Rncs' # uninstall package
 alias update='sudo pacman -Syu' # update system/package
@@ -34,9 +42,10 @@ alias s='sudo pacman -Ss' # list availabe pacman package
 alias ps='paru -Ss' # list availabe aur package
 alias pc='sudo pacman -Sc' # remove unused cache
 alias ro='paru -Qtdq | paru -Rncs -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
+
 # alias code='code --ozone-platform=wayland' # gui code editor
 alias code='codium --ozone-platform=wayland' # gui codium editor
-alias fsf='fastfetch'
+alias fetch='fastfetch'
 
 # Useful Aliases
 alias ..='cd ..'
@@ -52,6 +61,7 @@ alias mkdir='mkdir -p'
 alias ssh='kitten ssh'
 # alias deepseek='ollama run deepseek-r1:1.5b' # Deepseek R1 LLM local 8b parameter install
 
+
 # Keybinds
 bindkey "^[[1;5C" forward-word # ctrl+right-arrow
 bindkey "^[[1;5D" backward-word # ctrl+left-arrow
@@ -59,6 +69,7 @@ bindkey "^[[A" history-substring-search-up # history up
 bindkey "^[[B" history-substring-search-down # history down
 bindkey "^[[3;5~" kill-word # ctrl+del
 bindkey "^[[3~" delete-char # del
+
 
 # Source antidote
 export ANTIDOTE_HOME="$HOME/.config/.antidote"
@@ -69,9 +80,10 @@ fi
 source "$ANTIDOTE_HOME/antidote.zsh"  # Sourcing antidote plugins
 antidote load $HOME/.config/.zsh_plugins.txt
 
+
 # Starship eval
-eval "$(starship init zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+# eval "$(starship init zsh)"
+# eval "$(zoxide init --cmd cd zsh)"
 
 # Pokemon Script
 pokego --no-title -r 1 2 3

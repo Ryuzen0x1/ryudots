@@ -1,0 +1,5 @@
+# fish like features
+zsh-users/zsh-history-substring-search
+
+# powerlevel10k
+romkatv/powerlevel10k
